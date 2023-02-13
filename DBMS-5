@@ -1,0 +1,4 @@
+CREATE TABLE student_info(student_name varchar(30),Student_ID int primary key, Age real);
+CREATE TABLE marks_detail(SID int,Grade varchar(10),FOREIGN KEY (SID) REFERENCES student_info(Student_ID));
+CREATE TABLE attendance(SID int,perc_attendance real,FOREIGN KEY (SID) REFERENCES student_info(Student_ID));
+CREATE TABLE sports_enroll(S_name varchar(20) UNIQUE,Sports_ID varcahar(5),Activity varchar(20));
